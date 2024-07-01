@@ -1,0 +1,15 @@
+export default {
+  primaryColor: '#hsl(201, 100%, 81%)',
+  secondaryColor: 'hsl(208, 100%, 30%)',
+  borderRadius: '4px',
+  backgroundColor: 'hsl(192, 100%, 90%)',
+  clrPrimary100: '#ccedf5',
+  clrPrimary200: '#80d1e6',
+  clrPrimary300: '#4dbfdb',
+  clrPrimary400: '#1aacd1',
+  clrPrimary500: '#00a3cc',
+  clrPrimary600: '#0082a3',
+  clrPrimary700: '#00627a',
+  clrPrimary800: '#004152',
+  clrPrimary900: '#001014',
+};

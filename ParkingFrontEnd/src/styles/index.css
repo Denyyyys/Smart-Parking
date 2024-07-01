@@ -1,0 +1,41 @@
+:root {
+  --clr-primary-100: #ccedf5;
+  --clr-primary-200: #80d1e6;
+  --clr-primary-300: #4dbfdb;
+  --clr-primary-400: #1aacd1;
+  --clr-primary-500: #00a3cc;
+  --clr-primary-600: #0082a3;
+  --clr-primary-700: #00627a;
+  --clr-primary-800: #004152;
+  --clr-primary-900: #001014;
+}
+
+body {
+  background-color: var(--clr-primary-100);
+}
+
+.btn-primary {
+  --bs-btn-active-bg: var(--clr-primary-800);
+  background-color: var(--clr-primary-700);
+  border-color: var(--clr-primary-700);
+}
+.btn-primary:hover {
+  background-color: var(--clr-primary-800);
+}
+
+.btn-primary:focus {
+  background-color: var(--clr-primary-800);
+}
+
+.btn-primary:active {
+  background-color: var(--clr-primary-800);
+}
+
+.btn-block {
+  min-width: 100%;
+}
+
+.profileWrapper {
+  margin: auto;
+  max-width: calc(100% - 40px);
+}
