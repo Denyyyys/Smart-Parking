@@ -1,0 +1,722 @@
+{
+	"info": {
+		"_postman_id": "d6eca8b8-4d51-4d0d-b1ae-0a2a38b2a64a",
+		"name": "ParkingAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "17075937"
+	},
+	"item": [
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "Create New User",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Email\": \"driver1@mail.com\",\r\n    \"Password\": \"qwerty123\",\r\n    \"FirstName\": \"NieJan\",\r\n    \"LastName\": \"NieKowalski\",\r\n    \"LicensePlateNumber\": \"WA12345A\",\r\n    \"RegistrationType\": \"driver\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://172.31.32.1:7026/api/account/register",
+							"protocol": "https",
+							"host": [
+								"172",
+								"31",
+								"32",
+								"1"
+							],
+							"port": "7026",
+							"path": [
+								"api",
+								"account",
+								"register"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Create New Driver",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"RegistrationType\": \"driver\",\r\n    \"Email\": \"driver1@mail.com\",\r\n    \"Password\": \"qwerty123\",\r\n    \"FirstName\": \"NieJan\",\r\n    \"LastName\": \"NieKowalski\",\r\n    \"LicensePlateNumber\": \"WA12345A\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://localhost:44372/api/account/register",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "44372",
+									"path": [
+										"api",
+										"account",
+										"register"
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "Create New Driver2",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"RegistrationType\": \"driver\",\r\n    \"Email\": \"driver2@mail.com\",\r\n    \"Password\": \"qwerty123\",\r\n    \"FirstName\": \"NieJan\",\r\n    \"LastName\": \"NieKowalski\",\r\n    \"LicensePlateNumber\": \"WA12345X\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://localhost:44372/api/account/register",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "44372",
+									"path": [
+										"api",
+										"account",
+										"register"
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "Create New Parking Admin",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"RegistrationType\": \"parkingAdmin\",\r\n    \"Email\": \"parkingAdmin1@mail.com\",\r\n    \"Password\": \"qwerty123\",\r\n    \"FirstName\": \"John\",\r\n    \"LastName\": \"Doe\"\r\n}   ",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://localhost:44372/api/account/register",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "44372",
+									"path": [
+										"api",
+										"account",
+										"register"
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Email\": \"parkingAdmin1@mail.com\",\r\n    \"Password\": \"qwerty123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44372/api/account/login",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44372",
+							"path": [
+								"api",
+								"account",
+								"login"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Login Driver",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"Email\": \"driver1@mail.com\",\r\n    \"Password\": \"qwerty123\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://localhost:44372/api/account/login",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "44372",
+									"path": [
+										"api",
+										"account",
+										"login"
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "Login Parking Admin",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"Email\": \"parkingAdmin1@mail.com\",\r\n    \"Password\": \"qwerty123\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://localhost:44372/api/account/login",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "44372",
+									"path": [
+										"api",
+										"account",
+										"login"
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "Register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"RegistrationType\": \"driver\",\r\n    \"Email\": \"driver1@mail.com\",\r\n    \"Password\": \"qwerty123\",\r\n    \"FirstName\": \"NieJan\",\r\n    \"LastName\": \"NieKowalski\",\r\n    \"LicensePlateNumber\": \"WA12345A\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44372/api/account/register",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44372",
+							"path": [
+								"api",
+								"account",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Stats",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiI2ODhmNDk0Ni1mMDhmLTQyNWQtOTMzNS1iYzRmMDZiOTQ2OTYiLCJzdWIiOiJkcml2ZXIxQG1haWwuY29tIiwiZW1haWwiOiJkcml2ZXIxQG1haWwuY29tIiwiRW1haWwiOiJkcml2ZXIxQG1haWwuY29tIiwiVXNlcklkIjoiMTUiLCJMb2dpblR5cGUiOiJkcml2ZXIiLCJuYmYiOjE3MTYzNzA5NTMsImV4cCI6MTcyNTAxMDk1MywiaWF0IjoxNzE2MzcwOTUzLCJpc3MiOiJodHRwczovL1BhcmtpbmciLCJhdWQiOiJodHRwczovL2xvY2FsaG9zdDo3MDI2L2FwaS8ifQ._ZbRZqlGrU6mthQOv-G8ugUgW4H8iqPbKEADtKeaXZg",
+								"description": "user token"
+							}
+						],
+						"url": {
+							"raw": "https://localhost:44372/api/user/stats",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44372",
+							"path": [
+								"api",
+								"user",
+								"stats"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get History",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiI5NjVjMTM2YS0xN2EzLTQ1MjYtODkzZC05M2I4YmViM2RiMWYiLCJzdWIiOiJkcml2ZXIxQG1haWwuY29tIiwiZW1haWwiOiJkcml2ZXIxQG1haWwuY29tIiwiRW1haWwiOiJkcml2ZXIxQG1haWwuY29tIiwiVXNlcklkIjoiMTMiLCJMb2dpblR5cGUiOiJkcml2ZXIiLCJuYmYiOjE3MTYzMDI4NzEsImV4cCI6MTcyNDk0Mjg3MSwiaWF0IjoxNzE2MzAyODcxLCJpc3MiOiJodHRwczovL1BhcmtpbmciLCJhdWQiOiJodHRwczovL2xvY2FsaG9zdDo3MDI2L2FwaS8ifQ._zqzcgO6sH-sIRtLS6HQPiycMDAZMpRmQQl3cE-jlsQ",
+								"description": "user token"
+							}
+						],
+						"url": {
+							"raw": "https://localhost:44372/api/user/history",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44372",
+							"path": [
+								"api",
+								"user",
+								"history"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Start flashing place",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiI3MTE1OTUzMi0zOWNjLTRmODItODZhNy1jYWY1NDcwNTZmMjciLCJzdWIiOiJkcml2ZXIxQG1haWwuY29tIiwiZW1haWwiOiJkcml2ZXIxQG1haWwuY29tIiwiRW1haWwiOiJkcml2ZXIxQG1haWwuY29tIiwiVXNlcklkIjoiMiIsIkxvZ2luVHlwZSI6ImRyaXZlciIsIm5iZiI6MTcxNzk3MjYwMiwiZXhwIjoxNzI2NjEyNjAyLCJpYXQiOjE3MTc5NzI2MDIsImlzcyI6Imh0dHBzOi8vUGFya2luZyIsImF1ZCI6Imh0dHBzOi8vbG9jYWxob3N0OjcwMjYvYXBpLyJ9.hv0SNd-XChvXBQ4spXQ9kf7AKewV4EFxhgTCx7IadJc"
+							}
+						],
+						"url": {
+							"raw": "https://localhost:7026/api/user/startFlash",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7026",
+							"path": [
+								"api",
+								"user",
+								"startFlash"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Stop flash place",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiI3MTE1OTUzMi0zOWNjLTRmODItODZhNy1jYWY1NDcwNTZmMjciLCJzdWIiOiJkcml2ZXIxQG1haWwuY29tIiwiZW1haWwiOiJkcml2ZXIxQG1haWwuY29tIiwiRW1haWwiOiJkcml2ZXIxQG1haWwuY29tIiwiVXNlcklkIjoiMiIsIkxvZ2luVHlwZSI6ImRyaXZlciIsIm5iZiI6MTcxNzk3MjYwMiwiZXhwIjoxNzI2NjEyNjAyLCJpYXQiOjE3MTc5NzI2MDIsImlzcyI6Imh0dHBzOi8vUGFya2luZyIsImF1ZCI6Imh0dHBzOi8vbG9jYWxob3N0OjcwMjYvYXBpLyJ9.hv0SNd-XChvXBQ4spXQ9kf7AKewV4EFxhgTCx7IadJc"
+							}
+						],
+						"url": {
+							"raw": "https://localhost:44372/api/user/stopflash",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44372",
+							"path": [
+								"api",
+								"user",
+								"stopflash"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get timeleft",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiI2ODhmNDk0Ni1mMDhmLTQyNWQtOTMzNS1iYzRmMDZiOTQ2OTYiLCJzdWIiOiJkcml2ZXIxQG1haWwuY29tIiwiZW1haWwiOiJkcml2ZXIxQG1haWwuY29tIiwiRW1haWwiOiJkcml2ZXIxQG1haWwuY29tIiwiVXNlcklkIjoiMTUiLCJMb2dpblR5cGUiOiJkcml2ZXIiLCJuYmYiOjE3MTYzNzA5NTMsImV4cCI6MTcyNTAxMDk1MywiaWF0IjoxNzE2MzcwOTUzLCJpc3MiOiJodHRwczovL1BhcmtpbmciLCJhdWQiOiJodHRwczovL2xvY2FsaG9zdDo3MDI2L2FwaS8ifQ._ZbRZqlGrU6mthQOv-G8ugUgW4H8iqPbKEADtKeaXZg",
+								"description": "user token"
+							}
+						],
+						"url": {
+							"raw": "https://localhost:44372/api/user/timeleft",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44372",
+							"path": [
+								"api",
+								"user",
+								"timeleft"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Parking",
+			"item": [
+				{
+					"name": "Get All Parkings",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": ""
+							}
+						],
+						"url": {
+							"raw": "https://localhost:44372/api/Parking",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44372",
+							"path": [
+								"api",
+								"Parking"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create New Parking",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiI0YjBhZmJmNS1jZjY5LTQ5MTQtOGExNy1mNGJlMjcxODM1ZWMiLCJzdWIiOiJwYXJraW5nQWRtaW4xQG1haWwuY29tIiwiZW1haWwiOiJwYXJraW5nQWRtaW4xQG1haWwuY29tIiwiRW1haWwiOiJwYXJraW5nQWRtaW4xQG1haWwuY29tIiwiVXNlcklkIjoiMTMiLCJMb2dpblR5cGUiOiJwYXJraW5nQWRtaW4iLCJuYmYiOjE3MTYzNzAyMDMsImV4cCI6MTcyNTAxMDIwMywiaWF0IjoxNzE2MzcwMjAzLCJpc3MiOiJodHRwczovL1BhcmtpbmciLCJhdWQiOiJodHRwczovL2xvY2FsaG9zdDo3MDI2L2FwaS8ifQ.ZYsqDjfVXsUowm1fwyEewb3kLxWXGpT1OtFRozDnsiQ",
+								"description": "admin token"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"Name\": \"Example Parking\",\r\n  \"NumberParkingSpaces\": 100,\r\n  \"City\": \"Example City\",\r\n  \"Street\": \"Example Street\",\r\n  \"PostalCode\": \"12345\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44372/api/Parking",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44372",
+							"path": [
+								"api",
+								"Parking"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Parking By Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44372/api/Parking/:id",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44372",
+							"path": [
+								"api",
+								"Parking",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "18"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Free places",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJlMDFlMTQ4Ny1kMmVmLTQzMmQtOTZlZS0zZDkyNmQ2MzdmNmYiLCJzdWIiOiJwYXJraW5nQWRtaW4xQG1haWwuY29tIiwiZW1haWwiOiJwYXJraW5nQWRtaW4xQG1haWwuY29tIiwiRW1haWwiOiJwYXJraW5nQWRtaW4xQG1haWwuY29tIiwiVXNlcklkIjoiMTYiLCJMb2dpblR5cGUiOiJwYXJraW5nQWRtaW4iLCJuYmYiOjE3MTY1NjY4MDAsImV4cCI6MTcyNTIwNjgwMCwiaWF0IjoxNzE2NTY2ODAwLCJpc3MiOiJodHRwczovL1BhcmtpbmciLCJhdWQiOiJodHRwczovL2xvY2FsaG9zdDo3MDI2L2FwaS8ifQ.VzwmbAO5aR9W7tbzfhK5f6SKuioC2B53j3sHXfsaQLE"
+							}
+						],
+						"url": {
+							"raw": "https://localhost:44372/api/Parking/freeplaces",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44372",
+							"path": [
+								"api",
+								"Parking",
+								"freeplaces"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Taken places",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJlMDFlMTQ4Ny1kMmVmLTQzMmQtOTZlZS0zZDkyNmQ2MzdmNmYiLCJzdWIiOiJwYXJraW5nQWRtaW4xQG1haWwuY29tIiwiZW1haWwiOiJwYXJraW5nQWRtaW4xQG1haWwuY29tIiwiRW1haWwiOiJwYXJraW5nQWRtaW4xQG1haWwuY29tIiwiVXNlcklkIjoiMTYiLCJMb2dpblR5cGUiOiJwYXJraW5nQWRtaW4iLCJuYmYiOjE3MTY1NjY4MDAsImV4cCI6MTcyNTIwNjgwMCwiaWF0IjoxNzE2NTY2ODAwLCJpc3MiOiJodHRwczovL1BhcmtpbmciLCJhdWQiOiJodHRwczovL2xvY2FsaG9zdDo3MDI2L2FwaS8ifQ.VzwmbAO5aR9W7tbzfhK5f6SKuioC2B53j3sHXfsaQLE"
+							}
+						],
+						"url": {
+							"raw": "https://localhost:44372/api/Parking/takenplaces",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44372",
+							"path": [
+								"api",
+								"Parking",
+								"takenplaces"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get User place",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJmZmM2MTE1ZS1lY2U2LTQzNjMtYmFjNS0yNzA2ZjY3MGM1OGYiLCJzdWIiOiJwYXJraW5nQWRtaW4yQG1haWwuY29tIiwiZW1haWwiOiJwYXJraW5nQWRtaW4yQG1haWwuY29tIiwiRW1haWwiOiJwYXJraW5nQWRtaW4yQG1haWwuY29tIiwiVXNlcklkIjoiMTUiLCJMb2dpblR5cGUiOiJwYXJraW5nQWRtaW4iLCJuYmYiOjE3MTY0ODQwMzAsImV4cCI6MTcyNTEyNDAzMCwiaWF0IjoxNzE2NDg0MDMwLCJpc3MiOiJodHRwczovL1BhcmtpbmciLCJhdWQiOiJodHRwczovL2xvY2FsaG9zdDo3MDI2L2FwaS8ifQ.ALv7SUckh2l7vB29kTvnDxnsDk0ZiSIthcZBnZ3h5mo"
+							}
+						],
+						"url": {
+							"raw": "https://localhost:44372/api/Parking/user/:licensePlateNumber",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44372",
+							"path": [
+								"api",
+								"Parking",
+								"user",
+								":licensePlateNumber"
+							],
+							"variable": [
+								{
+									"key": "licensePlateNumber",
+									"value": "WA12347A"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get flashing places",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJlMDFlMTQ4Ny1kMmVmLTQzMmQtOTZlZS0zZDkyNmQ2MzdmNmYiLCJzdWIiOiJwYXJraW5nQWRtaW4xQG1haWwuY29tIiwiZW1haWwiOiJwYXJraW5nQWRtaW4xQG1haWwuY29tIiwiRW1haWwiOiJwYXJraW5nQWRtaW4xQG1haWwuY29tIiwiVXNlcklkIjoiMTYiLCJMb2dpblR5cGUiOiJwYXJraW5nQWRtaW4iLCJuYmYiOjE3MTY1NjY4MDAsImV4cCI6MTcyNTIwNjgwMCwiaWF0IjoxNzE2NTY2ODAwLCJpc3MiOiJodHRwczovL1BhcmtpbmciLCJhdWQiOiJodHRwczovL2xvY2FsaG9zdDo3MDI2L2FwaS8ifQ.VzwmbAO5aR9W7tbzfhK5f6SKuioC2B53j3sHXfsaQLE"
+							}
+						],
+						"url": {
+							"raw": "https://localhost:44372/api/Parking/flashingplaces",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44372",
+							"path": [
+								"api",
+								"Parking",
+								"flashingplaces"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Parking By Id",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJiNjNjYmNmZi1kOWIzLTQwMmEtYTk2Ni1kYTYzNjVmMzdmZTIiLCJzdWIiOiJwYXJraW5nQWRtaW4xQG1haWwuY29tIiwiZW1haWwiOiJwYXJraW5nQWRtaW4xQG1haWwuY29tIiwiRW1haWwiOiJwYXJraW5nQWRtaW4xQG1haWwuY29tIiwiVXNlcklkIjoiOSIsIkxvZ2luVHlwZSI6InBhcmtpbmdBZG1pbiIsIm5iZiI6MTcxNTg5NzUwOSwiZXhwIjoxNzI0NTM3NTA5LCJpYXQiOjE3MTU4OTc1MDksImlzcyI6Imh0dHBzOi8vUGFya2luZyIsImF1ZCI6Imh0dHBzOi8vbG9jYWxob3N0OjcwMjYvYXBpLyJ9.thbuUMQ5FSNwIZBtDSqHi2wNIcGgCUIVEXBDmRS_ftc",
+								"description": "admin, who created parking token",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "https://localhost:44372/api/Parking/:id",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44372",
+							"path": [
+								"api",
+								"Parking",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "14"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Driver to Parking",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJmZmM2MTE1ZS1lY2U2LTQzNjMtYmFjNS0yNzA2ZjY3MGM1OGYiLCJzdWIiOiJwYXJraW5nQWRtaW4yQG1haWwuY29tIiwiZW1haWwiOiJwYXJraW5nQWRtaW4yQG1haWwuY29tIiwiRW1haWwiOiJwYXJraW5nQWRtaW4yQG1haWwuY29tIiwiVXNlcklkIjoiMTUiLCJMb2dpblR5cGUiOiJwYXJraW5nQWRtaW4iLCJuYmYiOjE3MTY0ODQwMzAsImV4cCI6MTcyNTEyNDAzMCwiaWF0IjoxNzE2NDg0MDMwLCJpc3MiOiJodHRwczovL1BhcmtpbmciLCJhdWQiOiJodHRwczovL2xvY2FsaG9zdDo3MDI2L2FwaS8ifQ.ALv7SUckh2l7vB29kTvnDxnsDk0ZiSIthcZBnZ3h5mo",
+								"description": "admin token"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"MaxSecondsParking\": 1200,\r\n    \"ParkingPlace\": \"@Sdf2\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44372/api/Parking/driver/:licensePlateNumber",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44372",
+							"path": [
+								"api",
+								"Parking",
+								"driver",
+								":licensePlateNumber"
+							],
+							"variable": [
+								{
+									"key": "licensePlateNumber",
+									"value": "WA12347A"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Remove Driver from Parking",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJiNjNjYmNmZi1kOWIzLTQwMmEtYTk2Ni1kYTYzNjVmMzdmZTIiLCJzdWIiOiJwYXJraW5nQWRtaW4xQG1haWwuY29tIiwiZW1haWwiOiJwYXJraW5nQWRtaW4xQG1haWwuY29tIiwiRW1haWwiOiJwYXJraW5nQWRtaW4xQG1haWwuY29tIiwiVXNlcklkIjoiOSIsIkxvZ2luVHlwZSI6InBhcmtpbmdBZG1pbiIsIm5iZiI6MTcxNTg5NzUwOSwiZXhwIjoxNzI0NTM3NTA5LCJpYXQiOjE3MTU4OTc1MDksImlzcyI6Imh0dHBzOi8vUGFya2luZyIsImF1ZCI6Imh0dHBzOi8vbG9jYWxob3N0OjcwMjYvYXBpLyJ9.thbuUMQ5FSNwIZBtDSqHi2wNIcGgCUIVEXBDmRS_ftc",
+								"description": "admin token"
+							}
+						],
+						"url": {
+							"raw": "https://localhost:44372/api/Parking/driver/:licensePlateNumber",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44372",
+							"path": [
+								"api",
+								"Parking",
+								"driver",
+								":licensePlateNumber"
+							],
+							"variable": [
+								{
+									"key": "licensePlateNumber",
+									"value": "WA12345A"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
